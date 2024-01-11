@@ -1,0 +1,51 @@
+{
+  "Field of Work": {
+    "Gestor": "Management",
+    "Engenharia de Dados": "Data Engineering",
+    "Ciência de Dados": "Data Science",
+    "Outra": "Other",
+    "Análise de Dados": "Data Analysis"
+  },
+  "Role (Function)": {
+    "Supervisor/Coordenador": "Supervisor/Coordinator",
+    "Sócio ou C-level (CEO, CDO, CIO, CTO etc)": "Partner or C-level",
+    "Gerente/Head/Diretor/VP": "Manager/Head/Director/VP",
+    "Team Leader/Tech Leader": "Team Leader/Tech Leader",
+    "Engenheiro de Dados/Data Engineer": "Data Engineer",
+    "Cientista de Dados/Data Scientist": "Data Scientist",
+    "Técnico": "Technician",
+    "Analista de BI/BI Analyst/Analytics Engineer": "BI Analyst/Analytics Engineer",
+    "Analista de Negócios/Business Analyst": "Business Analyst",
+    "Analista de Marketing": "Marketing Analyst",
+    "Analista de Dados/Data Analyst": "Data Analyst",
+    "Desenvolvedor ou Engenheiro de Software": "Software Developer or Engineer",
+    "Analista Administrativo": "Administrative Analyst",
+    "Engenheiro de Machine Learning/ML Engineer": "Machine Learning Engineer",
+    "Outras Engenharias (não inclui dev)": "Other Engineering (non-dev)",
+    "DBA/Administrador de Banco de Dados": "DBA/Database Administrator",
+    "Outro": "Other",
+    "Professor": "Professor",
+    "Estatístico": "Statistician",
+    "Analista de Sistemas/Analista de TI": "Systems Analyst/IT Analyst",
+    "Analista de Inteligência de Mercado/Market Intelligence": "Market Intelligence Analyst",
+    "Arquiteto de Dados": "Data Architect",
+    "Suporte Técnico": "Technical Support",
+    "Product Manager": "Product Manager"
+  },
+  "Level": {
+    "Não Informado": "Not Informed",
+    "Sênior": "Senior",
+    "Pleno": "Intermediate",
+    "Júnior": "Junior"
+  },
+  "Education level": {
+    "Ensino Médio": "High School",
+    "Estudante de Graduação": "Undergraduate Student",
+    "Graduação/Bacharelado": "Undergraduate",
+    "Pós-graduação": "Postgraduate",
+    "Mestrado": "Master's Degree",
+    "Doutorado ou Phd": "Ph.D.",
+    "Prefiro não informar": "Not Informed",
+    "Não tenho graduação formal": "None"
+  }
+}
