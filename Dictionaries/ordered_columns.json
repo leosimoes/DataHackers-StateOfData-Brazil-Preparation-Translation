@@ -1,3 +1,13 @@
 {
-  "Completo" : ["id", "Idade"]
+  "Completo" : ["id", "Idade"],
+  "Geral" : [],
+  "Analista de Dados" : [],
+  "Analista de BI" : [],
+  "Cientista de Dados" : [],
+  "Engenheiro de Dados" : [],
+  "Full" : [],
+  "Data Analyst" : [],
+  "BI Analyst" : [],
+  "Data Scientist" : [],
+  "Data Engineer" : []
 }
