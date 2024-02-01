@@ -16,6 +16,8 @@ The project files are:
     (keys) for English (values);
 - `Dictionaries/translations_of_modified_column_values.json` contains the translations of the column values in Portuguese
     (keys) for English (values);
+- `Scripts/divisor_v1.py`: python script to divide the data `Data/prepared_dataset.csv` into other datasets;
+- `Scripts/divisor_v2.py`: python script to divide the data `Data/translated_dataset.csv` into other datasets;
 - `Scripts/preparator.py`: python script to prepare the data in `Data/State_of_data_2023.csv` and save it to
    `Data/prepared.csv`;
 - `Scripts/translator.py`: python script to translate the data in `Data/prepared.csv` and save it to
@@ -55,6 +57,15 @@ The data translation steps were:
 4. Load the translations of the column values in `Dictionaries/translations_of_modified_column_values.json`;
 5. Translate the column values;
 6. Save the data in `Data/translated_dataset.csv`.
+
+
+## Data division
+The data division steps were:
+1. Load data from `Data/prepared_dataset.csv`;
+2. Create filters for dataframe rows;
+3. Load list of selected columns by dataframe using `Dictionaries/ordered columns.json`;
+4. Filter dataframes;
+5. Save dataframes to files.
 
 
 ## References
