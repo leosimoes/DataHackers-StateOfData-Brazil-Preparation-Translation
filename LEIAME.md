@@ -16,6 +16,8 @@ Os arquivos do projeto são:
    (chaves) para o inglês (valores);
 - `Dictionaries/translations_of_modified_column_values.json` contém as traduções dos valores das colunas em português
    (chaves) para o inglês (valores);
+- `Scripts/divisor_v1.py`: script python para dividir os dados `Data/prepared_dataset.csv` em outros datasets;
+- `Scripts/divisor_v2.py`:script python para dividir os dados `Data/translated_dataset.csv` em outros datasets;
 - `Scripts/preparator.py`: script python para preparar os dados em `Data/State_of_data_2023.csv` e salvá-los em 
   `Data/prepared.csv`;
 - `Scripts/translator.py`: script python para traduzir os dados em `Data/prepared.csv` e salvá-los em 
@@ -31,16 +33,16 @@ As etapas de preparação dos dados usando `Scripts/preparator.py` foram:
 5. Verificar se não há repetição de nomes colunas;
 6. Remover linhas indesejadas:
     - duplicadas;
-    - com valores ausentes em 'id' ou 'idade';
+    - com valores ausentes em `'id`' ou `'Idade'`;
 7. Converter colunas numéricas, exceto "Idade", para o tipo string (object);
 8. Preencher valores ausentes do tipo string com `"Não Informado"`; 
 9. Formatar valores (usando alguma função de string ou `Dictionaries/mapped_columns_values.json`):
     - remover espaços em branco no início e no final;
-    - exceto para `"Idade"`, converter `"1"` e `"1.0"` para "Sim" e `"0"` e `"0.0"` para `"Não"`;
+    - exceto para `"Idade"`, converter `"1"` e `"1.0"` para `"Sim"` e `"0"` e `"0.0"` para `"Não"`;
     - ajustar valores de `"Faixa salarial"`;
     - ajustar valores de `"Cargo Atual"`;
 10. Criar novas colunas derivadas (usando `Dictionaries/mapped_columns_values.json`):
-    - `"Campo de Atuação Geral"`: com valores `"Dados"`, `"Outra"` e `"Não Informado"`;
+    - `"Campo de Atuação Geral"`: com valores `"Dados"`, `"Outras"` e `"Não Informado"`;
     - `"Faixa salarial ($)"`: usando `"Faixa salarial"`;
 11. Verificar se não há valores ausentes; 
 12. Ordenar as colunas do dataframe de acordo com `Dictionaries/ordered_columns.json`;
@@ -55,6 +57,15 @@ As etapas de tradução dos dados foram:
 4. Carregar as traduções dos valores das colunas em `Dictionaries/translations_of_modified_column_values.json`;
 5. Traduzir os valores das colunas;
 6. Salvar os dados em `Data/translated_dataset.csv`.
+
+
+## Divisão dos dados
+As etapas de divisão dos dados foram:
+1. Carregar os dados de `Data/prepared_dataset.csv`;
+2. Criar filtros para linhas do dataframe;
+3. Carregar lista de colunas selecionadas por dataframe usando `Dictionaries/ordered columns.json`;
+4. Filtrar dataframes;
+5. Salvar dataframes em arquivos.
 
 
 ## Referências 
