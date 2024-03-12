@@ -20,6 +20,8 @@ Os arquivos do projeto são:
 - `Scripts/divisor_v2.py`:script python para dividir os dados `Data/translated_dataset.csv` em outros datasets;
 - `Scripts/preparator.py`: script python para preparar os dados em `Data/State_of_data_2023.csv` e salvá-los em 
   `Data/prepared.csv`;
+- `Scripts/preselector.py`: script selecionar algumas das colunas de `Data/State_of_data_2023.csv` e salvá-las em 
+  `Dictionaries/selected_columns.json` e `Dictionaries/ordered_columns.json`;
 - `Scripts/translator.py`: script python para traduzir os dados em `Data/prepared.csv` e salvá-los em 
   `Data/translated_dataset.csv`.
 
